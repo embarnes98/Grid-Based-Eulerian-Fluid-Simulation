@@ -1,0 +1,5 @@
+if(EXISTS "C:/Users/edward/fluid-sim-sfml/build/Fluid-Sim-SFML-Tests[1]_tests.cmake")
+  include("C:/Users/edward/fluid-sim-sfml/build/Fluid-Sim-SFML-Tests[1]_tests.cmake")
+else()
+  add_test(Fluid-Sim-SFML-Tests_NOT_BUILT Fluid-Sim-SFML-Tests_NOT_BUILT)
+endif()

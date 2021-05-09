@@ -1,0 +1,383 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{D6470FE0-D5DA-34A3-B3DA-4E5A2068B267}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>Fluid-Sim-SFML</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+    <VcpkgEnabled>false</VcpkgEnabled>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="do_not_import_user.props" Condition="exists('do_not_import_user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\edward\fluid-sim-sfml\build\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Fluid-Sim-SFML.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Fluid-Sim-SFML</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\edward\fluid-sim-sfml\build\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Fluid-Sim-SFML.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Fluid-Sim-SFML</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\edward\fluid-sim-sfml\build\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Fluid-Sim-SFML.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Fluid-Sim-SFML</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\edward\fluid-sim-sfml\build\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Fluid-Sim-SFML.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Fluid-Sim-SFML</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\edward\fluid-sim-sfml\include;C:\Users\edward\vcpkg\installed\x64-windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;/wd4251;_USE_MATH_DEFINES;NOMINMAX;FLAC__NO_DLL;OV_EXCLUDE_STATIC_CALLBACKS;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;/wd4251;_USE_MATH_DEFINES;NOMINMAX;FLAC__NO_DLL;OV_EXCLUDE_STATIC_CALLBACKS;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\edward\fluid-sim-sfml\include;C:\Users\edward\vcpkg\installed\x64-windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\edward\fluid-sim-sfml\include;C:\Users\edward\vcpkg\installed\x64-windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -noprofile -executionpolicy Bypass -file C:/Users/edward/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary C:/Users/edward/fluid-sim-sfml/build/Debug/Fluid-Sim-SFML.exe -installedDir C:/Users/edward/vcpkg/installed/x64-windows/debug/bin -OutVariable out
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>C:\Users\edward\vcpkg\installed\x64-windows\debug\lib\sfml-graphics-d.lib;C:\Users\edward\vcpkg\installed\x64-windows\debug\lib\sfml-window-d.lib;C:\Users\edward\vcpkg\installed\x64-windows\debug\lib\sfml-system-d.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/edward/fluid-sim-sfml/build/Debug/Fluid-Sim-SFML.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/edward/fluid-sim-sfml/build/Debug/Fluid-Sim-SFML.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\edward\fluid-sim-sfml\include;C:\Users\edward\vcpkg\installed\x64-windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;/wd4251;_USE_MATH_DEFINES;NOMINMAX;FLAC__NO_DLL;OV_EXCLUDE_STATIC_CALLBACKS;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;/wd4251;_USE_MATH_DEFINES;NOMINMAX;FLAC__NO_DLL;OV_EXCLUDE_STATIC_CALLBACKS;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\edward\fluid-sim-sfml\include;C:\Users\edward\vcpkg\installed\x64-windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\edward\fluid-sim-sfml\include;C:\Users\edward\vcpkg\installed\x64-windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -noprofile -executionpolicy Bypass -file C:/Users/edward/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary C:/Users/edward/fluid-sim-sfml/build/Release/Fluid-Sim-SFML.exe -installedDir C:/Users/edward/vcpkg/installed/x64-windows/bin -OutVariable out
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>C:\Users\edward\vcpkg\installed\x64-windows\lib\sfml-graphics.lib;C:\Users\edward\vcpkg\installed\x64-windows\lib\sfml-window.lib;C:\Users\edward\vcpkg\installed\x64-windows\lib\sfml-system.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/edward/fluid-sim-sfml/build/Release/Fluid-Sim-SFML.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/edward/fluid-sim-sfml/build/Release/Fluid-Sim-SFML.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\edward\fluid-sim-sfml\include;C:\Users\edward\vcpkg\installed\x64-windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;/wd4251;_USE_MATH_DEFINES;NOMINMAX;FLAC__NO_DLL;OV_EXCLUDE_STATIC_CALLBACKS;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;/wd4251;_USE_MATH_DEFINES;NOMINMAX;FLAC__NO_DLL;OV_EXCLUDE_STATIC_CALLBACKS;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\edward\fluid-sim-sfml\include;C:\Users\edward\vcpkg\installed\x64-windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\edward\fluid-sim-sfml\include;C:\Users\edward\vcpkg\installed\x64-windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -noprofile -executionpolicy Bypass -file C:/Users/edward/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary C:/Users/edward/fluid-sim-sfml/build/MinSizeRel/Fluid-Sim-SFML.exe -installedDir C:/Users/edward/vcpkg/installed/x64-windows/bin -OutVariable out
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>C:\Users\edward\vcpkg\installed\x64-windows\lib\sfml-graphics.lib;C:\Users\edward\vcpkg\installed\x64-windows\lib\sfml-window.lib;C:\Users\edward\vcpkg\installed\x64-windows\lib\sfml-system.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/edward/fluid-sim-sfml/build/MinSizeRel/Fluid-Sim-SFML.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/edward/fluid-sim-sfml/build/MinSizeRel/Fluid-Sim-SFML.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\edward\fluid-sim-sfml\include;C:\Users\edward\vcpkg\installed\x64-windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;/wd4251;_USE_MATH_DEFINES;NOMINMAX;FLAC__NO_DLL;OV_EXCLUDE_STATIC_CALLBACKS;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;/wd4251;_USE_MATH_DEFINES;NOMINMAX;FLAC__NO_DLL;OV_EXCLUDE_STATIC_CALLBACKS;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\edward\fluid-sim-sfml\include;C:\Users\edward\vcpkg\installed\x64-windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\edward\fluid-sim-sfml\include;C:\Users\edward\vcpkg\installed\x64-windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -noprofile -executionpolicy Bypass -file C:/Users/edward/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary C:/Users/edward/fluid-sim-sfml/build/RelWithDebInfo/Fluid-Sim-SFML.exe -installedDir C:/Users/edward/vcpkg/installed/x64-windows/bin -OutVariable out
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>C:\Users\edward\vcpkg\installed\x64-windows\lib\sfml-graphics.lib;C:\Users\edward\vcpkg\installed\x64-windows\lib\sfml-window.lib;C:\Users\edward\vcpkg\installed\x64-windows\lib\sfml-system.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/edward/fluid-sim-sfml/build/RelWithDebInfo/Fluid-Sim-SFML.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/edward/fluid-sim-sfml/build/RelWithDebInfo/Fluid-Sim-SFML.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\edward\fluid-sim-sfml\CMakeLists.txt">
+      <StdOutEncoding>UTF-8</StdOutEncoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/edward/fluid-sim-sfml/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\Qt\Tools\CMake_64\bin\cmake.exe -SC:/Users/edward/fluid-sim-sfml -BC:/Users/edward/fluid-sim-sfml/build --check-stamp-file C:/Users/edward/fluid-sim-sfml/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Qt\Tools\CMake_64\share\cmake-3.19\Modules\CMakeCInformation.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.19\Modules\CMakeCXXInformation.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.19\Modules\CMakeCommonLanguageInclude.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.19\Modules\CMakeDependentOption.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.19\Modules\CMakeFindDependencyMacro.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.19\Modules\CMakeGenericSystem.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.19\Modules\CMakeInitializeConfigs.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.19\Modules\CMakeLanguageInformation.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.19\Modules\CMakeRCInformation.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.19\Modules\CMakeSystemSpecificInformation.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.19\Modules\CMakeSystemSpecificInitialize.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.19\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.19\Modules\Compiler\MSVC-C.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.19\Modules\Compiler\MSVC-CXX.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.19\Modules\GoogleTest.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.19\Modules\Platform\Windows-MSVC-C.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.19\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.19\Modules\Platform\Windows-MSVC.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.19\Modules\Platform\Windows.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.19\Modules\Platform\WindowsPaths.cmake;C:\Users\edward\fluid-sim-sfml\build\CMakeFiles\3.19.2\CMakeCCompiler.cmake;C:\Users\edward\fluid-sim-sfml\build\CMakeFiles\3.19.2\CMakeCXXCompiler.cmake;C:\Users\edward\fluid-sim-sfml\build\CMakeFiles\3.19.2\CMakeRCCompiler.cmake;C:\Users\edward\fluid-sim-sfml\build\CMakeFiles\3.19.2\CMakeSystem.cmake;C:\Users\edward\vcpkg\installed\x64-windows\share\GTest\GTestConfig.cmake;C:\Users\edward\vcpkg\installed\x64-windows\share\GTest\GTestConfigVersion.cmake;C:\Users\edward\vcpkg\installed\x64-windows\share\GTest\GTestTargets-debug.cmake;C:\Users\edward\vcpkg\installed\x64-windows\share\GTest\GTestTargets-release.cmake;C:\Users\edward\vcpkg\installed\x64-windows\share\GTest\GTestTargets.cmake;C:\Users\edward\vcpkg\installed\x64-windows\share\sfml\SFMLConfig.cmake;C:\Users\edward\vcpkg\installed\x64-windows\share\sfml\SFMLConfigDependencies.cmake;C:\Users\edward\vcpkg\installed\x64-windows\share\sfml\SFMLConfigVersion.cmake;C:\Users\edward\vcpkg\installed\x64-windows\share\sfml\SFMLSharedTargets-debug.cmake;C:\Users\edward\vcpkg\installed\x64-windows\share\sfml\SFMLSharedTargets-release.cmake;C:\Users\edward\vcpkg\installed\x64-windows\share\sfml\SFMLSharedTargets.cmake;C:\Users\edward\vcpkg\scripts\buildsystems\vcpkg.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\edward\fluid-sim-sfml\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/edward/fluid-sim-sfml/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\Qt\Tools\CMake_64\bin\cmake.exe -SC:/Users/edward/fluid-sim-sfml -BC:/Users/edward/fluid-sim-sfml/build --check-stamp-file C:/Users/edward/fluid-sim-sfml/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Qt\Tools\CMake_64\share\cmake-3.19\Modules\CMakeCInformation.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.19\Modules\CMakeCXXInformation.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.19\Modules\CMakeCommonLanguageInclude.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.19\Modules\CMakeDependentOption.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.19\Modules\CMakeFindDependencyMacro.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.19\Modules\CMakeGenericSystem.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.19\Modules\CMakeInitializeConfigs.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.19\Modules\CMakeLanguageInformation.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.19\Modules\CMakeRCInformation.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.19\Modules\CMakeSystemSpecificInformation.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.19\Modules\CMakeSystemSpecificInitialize.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.19\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.19\Modules\Compiler\MSVC-C.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.19\Modules\Compiler\MSVC-CXX.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.19\Modules\GoogleTest.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.19\Modules\Platform\Windows-MSVC-C.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.19\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.19\Modules\Platform\Windows-MSVC.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.19\Modules\Platform\Windows.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.19\Modules\Platform\WindowsPaths.cmake;C:\Users\edward\fluid-sim-sfml\build\CMakeFiles\3.19.2\CMakeCCompiler.cmake;C:\Users\edward\fluid-sim-sfml\build\CMakeFiles\3.19.2\CMakeCXXCompiler.cmake;C:\Users\edward\fluid-sim-sfml\build\CMakeFiles\3.19.2\CMakeRCCompiler.cmake;C:\Users\edward\fluid-sim-sfml\build\CMakeFiles\3.19.2\CMakeSystem.cmake;C:\Users\edward\vcpkg\installed\x64-windows\share\GTest\GTestConfig.cmake;C:\Users\edward\vcpkg\installed\x64-windows\share\GTest\GTestConfigVersion.cmake;C:\Users\edward\vcpkg\installed\x64-windows\share\GTest\GTestTargets-debug.cmake;C:\Users\edward\vcpkg\installed\x64-windows\share\GTest\GTestTargets-release.cmake;C:\Users\edward\vcpkg\installed\x64-windows\share\GTest\GTestTargets.cmake;C:\Users\edward\vcpkg\installed\x64-windows\share\sfml\SFMLConfig.cmake;C:\Users\edward\vcpkg\installed\x64-windows\share\sfml\SFMLConfigDependencies.cmake;C:\Users\edward\vcpkg\installed\x64-windows\share\sfml\SFMLConfigVersion.cmake;C:\Users\edward\vcpkg\installed\x64-windows\share\sfml\SFMLSharedTargets-debug.cmake;C:\Users\edward\vcpkg\installed\x64-windows\share\sfml\SFMLSharedTargets-release.cmake;C:\Users\edward\vcpkg\installed\x64-windows\share\sfml\SFMLSharedTargets.cmake;C:\Users\edward\vcpkg\scripts\buildsystems\vcpkg.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\edward\fluid-sim-sfml\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/edward/fluid-sim-sfml/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\Qt\Tools\CMake_64\bin\cmake.exe -SC:/Users/edward/fluid-sim-sfml -BC:/Users/edward/fluid-sim-sfml/build --check-stamp-file C:/Users/edward/fluid-sim-sfml/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Qt\Tools\CMake_64\share\cmake-3.19\Modules\CMakeCInformation.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.19\Modules\CMakeCXXInformation.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.19\Modules\CMakeCommonLanguageInclude.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.19\Modules\CMakeDependentOption.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.19\Modules\CMakeFindDependencyMacro.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.19\Modules\CMakeGenericSystem.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.19\Modules\CMakeInitializeConfigs.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.19\Modules\CMakeLanguageInformation.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.19\Modules\CMakeRCInformation.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.19\Modules\CMakeSystemSpecificInformation.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.19\Modules\CMakeSystemSpecificInitialize.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.19\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.19\Modules\Compiler\MSVC-C.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.19\Modules\Compiler\MSVC-CXX.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.19\Modules\GoogleTest.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.19\Modules\Platform\Windows-MSVC-C.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.19\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.19\Modules\Platform\Windows-MSVC.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.19\Modules\Platform\Windows.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.19\Modules\Platform\WindowsPaths.cmake;C:\Users\edward\fluid-sim-sfml\build\CMakeFiles\3.19.2\CMakeCCompiler.cmake;C:\Users\edward\fluid-sim-sfml\build\CMakeFiles\3.19.2\CMakeCXXCompiler.cmake;C:\Users\edward\fluid-sim-sfml\build\CMakeFiles\3.19.2\CMakeRCCompiler.cmake;C:\Users\edward\fluid-sim-sfml\build\CMakeFiles\3.19.2\CMakeSystem.cmake;C:\Users\edward\vcpkg\installed\x64-windows\share\GTest\GTestConfig.cmake;C:\Users\edward\vcpkg\installed\x64-windows\share\GTest\GTestConfigVersion.cmake;C:\Users\edward\vcpkg\installed\x64-windows\share\GTest\GTestTargets-debug.cmake;C:\Users\edward\vcpkg\installed\x64-windows\share\GTest\GTestTargets-release.cmake;C:\Users\edward\vcpkg\installed\x64-windows\share\GTest\GTestTargets.cmake;C:\Users\edward\vcpkg\installed\x64-windows\share\sfml\SFMLConfig.cmake;C:\Users\edward\vcpkg\installed\x64-windows\share\sfml\SFMLConfigDependencies.cmake;C:\Users\edward\vcpkg\installed\x64-windows\share\sfml\SFMLConfigVersion.cmake;C:\Users\edward\vcpkg\installed\x64-windows\share\sfml\SFMLSharedTargets-debug.cmake;C:\Users\edward\vcpkg\installed\x64-windows\share\sfml\SFMLSharedTargets-release.cmake;C:\Users\edward\vcpkg\installed\x64-windows\share\sfml\SFMLSharedTargets.cmake;C:\Users\edward\vcpkg\scripts\buildsystems\vcpkg.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\edward\fluid-sim-sfml\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/edward/fluid-sim-sfml/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\Qt\Tools\CMake_64\bin\cmake.exe -SC:/Users/edward/fluid-sim-sfml -BC:/Users/edward/fluid-sim-sfml/build --check-stamp-file C:/Users/edward/fluid-sim-sfml/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Qt\Tools\CMake_64\share\cmake-3.19\Modules\CMakeCInformation.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.19\Modules\CMakeCXXInformation.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.19\Modules\CMakeCommonLanguageInclude.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.19\Modules\CMakeDependentOption.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.19\Modules\CMakeFindDependencyMacro.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.19\Modules\CMakeGenericSystem.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.19\Modules\CMakeInitializeConfigs.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.19\Modules\CMakeLanguageInformation.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.19\Modules\CMakeRCInformation.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.19\Modules\CMakeSystemSpecificInformation.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.19\Modules\CMakeSystemSpecificInitialize.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.19\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.19\Modules\Compiler\MSVC-C.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.19\Modules\Compiler\MSVC-CXX.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.19\Modules\GoogleTest.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.19\Modules\Platform\Windows-MSVC-C.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.19\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.19\Modules\Platform\Windows-MSVC.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.19\Modules\Platform\Windows.cmake;C:\Qt\Tools\CMake_64\share\cmake-3.19\Modules\Platform\WindowsPaths.cmake;C:\Users\edward\fluid-sim-sfml\build\CMakeFiles\3.19.2\CMakeCCompiler.cmake;C:\Users\edward\fluid-sim-sfml\build\CMakeFiles\3.19.2\CMakeCXXCompiler.cmake;C:\Users\edward\fluid-sim-sfml\build\CMakeFiles\3.19.2\CMakeRCCompiler.cmake;C:\Users\edward\fluid-sim-sfml\build\CMakeFiles\3.19.2\CMakeSystem.cmake;C:\Users\edward\vcpkg\installed\x64-windows\share\GTest\GTestConfig.cmake;C:\Users\edward\vcpkg\installed\x64-windows\share\GTest\GTestConfigVersion.cmake;C:\Users\edward\vcpkg\installed\x64-windows\share\GTest\GTestTargets-debug.cmake;C:\Users\edward\vcpkg\installed\x64-windows\share\GTest\GTestTargets-release.cmake;C:\Users\edward\vcpkg\installed\x64-windows\share\GTest\GTestTargets.cmake;C:\Users\edward\vcpkg\installed\x64-windows\share\sfml\SFMLConfig.cmake;C:\Users\edward\vcpkg\installed\x64-windows\share\sfml\SFMLConfigDependencies.cmake;C:\Users\edward\vcpkg\installed\x64-windows\share\sfml\SFMLConfigVersion.cmake;C:\Users\edward\vcpkg\installed\x64-windows\share\sfml\SFMLSharedTargets-debug.cmake;C:\Users\edward\vcpkg\installed\x64-windows\share\sfml\SFMLSharedTargets-release.cmake;C:\Users\edward\vcpkg\installed\x64-windows\share\sfml\SFMLSharedTargets.cmake;C:\Users\edward\vcpkg\scripts\buildsystems\vcpkg.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\edward\fluid-sim-sfml\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\edward\fluid-sim-sfml\src\main.cpp" />
+    <ClCompile Include="C:\Users\edward\fluid-sim-sfml\src\Fluid-Sim-SFML.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\edward\fluid-sim-sfml\build\ZERO_CHECK.vcxproj">
+      <Project>{A676E59A-5C48-35C4-AEAC-06A727B373AE}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
